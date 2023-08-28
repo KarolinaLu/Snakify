@@ -1,0 +1,18 @@
+a = int(input())
+b = 0
+count = 1
+count2 = 0
+
+while a != 0:
+    if a == b:
+        count += 1
+    else:
+        count = 1
+    if count2 < count:
+        count2 = count
+    b = a
+    a = int(input())
+
+print(count2)
+
+
