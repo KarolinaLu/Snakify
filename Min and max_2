@@ -1,5 +1,4 @@
 lista = []
-k = 0
 
 for i in range(int(input())):
     lista.append(int(input()))
