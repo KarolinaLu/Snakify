@@ -1,0 +1,13 @@
+#creating a list
+a = [0] * int(input())
+
+for i in range(len(a)):
+    a[i] = int(input())
+#looking for a min and max number
+for i in range(len(a)):
+    if a[i] > a[i-1]:
+        maxi = a[i]
+    else:
+        mini = a[i]
+
+print(mini, maxi)
