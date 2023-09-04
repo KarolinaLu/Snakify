@@ -1,0 +1,16 @@
+A = []
+print("Please enter the length of the list, then enter the numbers of the list")
+for i in range(int(input())):
+    A.append(int(input()))
+n = len(A)
+
+while n > 1:
+    koniec = False
+    for a in range(0, n-1):
+        if A[a] > A[a+1]:
+            A[a], A[a+1] = A[a+1], A[a]
+            koniec = True
+    if koniec == False:
+        break
+    n -= 1
+print(A)
