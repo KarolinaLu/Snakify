@@ -1,0 +1,12 @@
+A = int(input())
+B = int(input())
+
+if A <= B:
+    lista = list(range(A, B+1))
+    for i in lista:
+        print(i)
+else:
+    lista = list(range(B, A+1))
+    lista.reverse()
+    for i in lista:
+        print(i)
