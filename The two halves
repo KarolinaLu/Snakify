@@ -1,0 +1,6 @@
+s = str(input())
+
+if len(s) % 2 == 0:
+    print(s[len(s)//2:], s[:(len(s)//2)], sep='', end='')
+else:
+    print(s[(len(s)//2)+1:], s[:((len(s)//2))+1], sep='', end='')
