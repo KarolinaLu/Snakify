@@ -1,0 +1,8 @@
+s = str(input())
+
+if s.count("f") >= 2:
+    print(s.find("f") + s[s.find("f")+1:].find("f")+1)
+elif s.count("f") == 0:
+    print(-2)
+else:
+    print(-1)
