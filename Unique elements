@@ -1,0 +1,14 @@
+lista = [4, 3, 5, 2, 5, 1, 3, 5]
+sort_lista = sorted(lista)
+sort_wyjatkowe = []
+wyjatkowe = []
+
+for a in range(len(lista)-1):
+    if sort_lista[a-1] != sort_lista[a] != sort_lista[a+1]:
+        sort_wyjatkowe.append(sort_lista[a])
+
+for x in lista:
+  if x in sort_wyjatkowe:
+    wyjatkowe.append(x)
+
+print(wyjatkowe)
