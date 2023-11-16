@@ -1,0 +1,9 @@
+a = int(input())
+b = 0
+c = a
+while a != 0:
+    b = a
+    a = int(input())
+    if a > b:
+        c = a
+print(c)
