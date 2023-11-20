@@ -1,0 +1,13 @@
+b = -1
+c = -1
+
+while True:
+    a = int(input())
+    if a >= b:
+        c = b
+        b = a
+    elif a > c:
+        c = a
+    if a == 0:
+        print(c)
+        break
