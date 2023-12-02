@@ -1,0 +1,8 @@
+A = input().split()
+n = len(A)
+for i in range(n):
+    A[i] = int(A[i])
+
+for a in range(0, n-1):
+    if A[a+1] > A[a]:
+        print(A[a+1])
