@@ -1,0 +1,11 @@
+A = input().split()
+n = len(A)
+for i in range(n):
+    A[i] = int(A[i])
+for a in range(0, n-1):
+    if A[a] > 0 and A[a+1] > 0:
+        print(A[a], A[a+1])
+        break
+    elif A[a] < 0 and A[a+1] <0:
+        print(A[a], A[a + 1])
+        break
