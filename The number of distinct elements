@@ -1,0 +1,9 @@
+A = [1, 2, 2, 3, 3, 4]
+B = []
+count = 0
+n = len(A)
+for a in range(0, n):
+    if A[a] not in B:
+        B.append(A[a])
+        count += 1
+print(count)
