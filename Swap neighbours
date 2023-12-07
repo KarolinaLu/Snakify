@@ -1,0 +1,5 @@
+A = [4, 5, 3, 4, 2, 3]
+n = len(A)
+for a in range(0, n-1, 2):
+    A[a], A[a+1] = A[a+1], A[a]
+print(A)
